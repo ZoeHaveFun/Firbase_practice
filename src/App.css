@@ -17,23 +17,29 @@ body {
   color: #6d6875;
   display: flex;
   flex-direction: column;
-  width: 600px;
-  padding: 40px 80px;
+  width: 80%;
+  padding: 0px 20px 0px 20px;
   background-color: white;
   border-radius: 1rem;
 }
-#root > h1 {
+.postform {
+  display: flex;
+  flex-direction: column;
+  padding: 40px 60px 20px 60px;
+  /* border-bottom: 1px #6d6875 solid; */
+}
+.postform > h1 {
   text-align: center;
   letter-spacing: 0.04rem;
 }
 
-#root > label {
+.postform > label {
   margin-top: 20px;
   margin-bottom: 10px;
 }
 
-#root > input,
-#root > textarea{
+.postform > input,
+.postform > textarea{
   padding: 4px 8px;
   outline: transparent;
   caret-color: #b5838d;
@@ -41,13 +47,13 @@ body {
   border-radius: 0.4rem;
   border: 1px #979797 solid;
 }
-#root > input:focus,
-#root > textarea:focus {
+.postform > input:focus,
+.postform > textarea:focus {
   box-shadow: 0px 0px 6px rgba(109, 104, 117, 0.2);
   border-color: #b5838d;
 }
 
-#root > textarea {
+.postform > textarea {
   height: 120px;
 }
 
@@ -68,7 +74,7 @@ body {
 .tag.active {
   background-color: #b5838d;
 }
-#root > button {
+.postform > button {
   margin-top: 30px;
   padding: 10px 0;
   letter-spacing: 0.2rem;
@@ -79,8 +85,26 @@ body {
   border-radius: 1rem;
   cursor: pointer;
 }
-#root > button:hover {
+.postform > button:hover {
   background-color: #b5838d;
   color: white;
   box-shadow: 0px 0px 6px #6d6875;
+}
+::placeholder{
+  color: #BFC0C0;
+}
+::-webkit-input-placeholder { /* Chrome, Safari */
+  color: #BFC0C0;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: #BFC0C0;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: #BFC0C0;
+  opacity: 1;
+}
+
+
+.articles {
+  padding: 10px 0px;
 }
